@@ -14,11 +14,11 @@ body {
   --font-inter: "Inter", sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
-  --fs-xs: 1rem;
+  
   /* --fs-xxl: 3rem; */
-  --fs-xxl: 2.3rem;
-  --fs-xl: 1.5rem;
-  --fs-l: 1.3rem;
+  --fs-xxl: 2rem;
+  --fs-xl: 1.3rem;
+  --fs-l: 1rem;
   --fs-s: 0.9rem;
   --fs-xs: 0.8rem;
 
@@ -460,7 +460,7 @@ main .self-pic-wrapper img {
 
 @media only screen and (min-width: 700px) {
   html {
-    font-size: 18px;
+    font-size: 15px;
   }
   body {
     --fs-xxl: 2.7rem;
@@ -503,7 +503,7 @@ main .self-pic-wrapper img {
 
 @media only screen and (min-width: 800px) {
   html {
-    font-size: 18px;
+    font-size: 15px;
   }
   body {
     --fs-xxl: 3.3rem;
@@ -516,7 +516,7 @@ main .self-pic-wrapper img {
 
 @media only screen and (min-width: 900px) {
   html {
-    font-size: 18px;
+    font-size: 15px;
   }
   body {
     --fs-xxl: 3.3rem;
@@ -554,7 +554,7 @@ main .self-pic-wrapper img {
   .wrapper {
     display: flex;
     gap: 4em;
-    width: 90%;
+    width: 80%;
     /* border: 1px solid red; */
   }
 
