@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body {
@@ -18,7 +22,7 @@ body {
   /* --fs-xxl: 3rem; */
   --fs-xxl: 2.3rem;
   --fs-xl: 1.5rem;
-  --fs-l: 1.3rem;
+  --fs-l: 1.2rem;
   --fs-s: 0.9rem;
   --fs-xs: 0.8rem;
 
@@ -32,6 +36,8 @@ body {
   --light-navy: #233554;
   --light-slate: #a8b2d1;
   --navy-shadow: rgba(2, 12, 27, 0.7);
+
+  --project-hover-bg: rgba(255, 255, 255, 0.064);
 
   --border-radius: 5px;
 
@@ -184,12 +190,16 @@ header > * {
 }
 
 .techs-used li {
-  padding: 0.5em 1em;
-  background: rgba(45, 212, 191, 0.1);
+  /* padding: 0.5em 1em; */
+  margin-right: 1em;
+  /* background: rgba(45, 212, 191, 0.1); */
   border-radius: 5em;
   font-size: var(--fs-xs);
+  font-family: var(--font-mono);
   color: rgba(94, 234, 213, 0.891);
-  font-weight: 600;
+  color: rgba(64, 186, 168, 0.891);
+
+  /* font-weight: 600; */
 }
 
 header p.nano-highlight-text {
@@ -284,7 +294,7 @@ main .title {
 }
 
 main .title:after {
-  content: "";
+  /* content: ""; */
   display: block;
   height: 1px;
   width: 300px;
@@ -357,6 +367,7 @@ main .self-pic-wrapper img {
   display: flex;
   flex-direction: column;
   gap: 6em;
+  /* border: 1px solid red; */
 }
 
 #projects .project-content .project-links svg {
@@ -381,7 +392,7 @@ main .self-pic-wrapper img {
 
 #projects .project-links {
   display: flex;
-  gap: 0.8em;
+  gap: 1em;
 }
 
 /* #projects .project-image a {
@@ -402,14 +413,15 @@ main .self-pic-wrapper img {
 } */
 
 #projects .project-image {
-  background: var(--green-dark);
+  /* background: var(--green-dark); */
   border-radius: var(--border-radius);
 }
 
 #projects .project-image img {
-  width: 140px;
+  width: 160px;
+  height: 100px;
   object-fit: cover;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   object-fit: cover;
 }
 
@@ -472,14 +484,14 @@ main .self-pic-wrapper img {
 
   #projects .project-container {
     flex-direction: row;
-    padding: 1.5em;
+    /* padding: 1.5em; */
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: all 400ms ease;
   }
 
   #projects .project-container:hover {
-    background: rgba(255, 255, 255, 0.109);
+    /* background: var(--project-hover-bg); */
   }
 
   #projects .project-container > * {
@@ -490,14 +502,14 @@ main .self-pic-wrapper img {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 2em;
-    padding: 1.5em;
-    cursor: pointer;
+    /* padding: 1.5em; */
+    /* cursor: pointer; */
     border-radius: var(--border-radius);
     transition: all 300ms ease;
   }
 
   .experiences-list li:hover {
-    background: rgba(255, 255, 255, 0.109);
+    /* background: rgba(255, 255, 255, 0.109); */
   }
 }
 
@@ -547,6 +559,7 @@ main .self-pic-wrapper img {
     display: flex;
     justify-content: flex-end;
     gap: 1em;
+    margin-top: 1em;
   }
 }
 
@@ -586,7 +599,7 @@ main .self-pic-wrapper img {
   }
 
   #projects > .content {
-    gap: 1em;
+    /* gap: 2em; */
   }
 
   section#about-me > * {
