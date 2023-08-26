@@ -8,7 +8,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 body {
@@ -571,8 +571,8 @@ main .self-pic-wrapper img {
 }
 
 @media only screen and (min-width: 700px) {
-  html {
-    font-size: 18px;
+  * {
+    font-size: 16px;
   }
   body {
     --fs-xxl: 2.5rem;
@@ -627,8 +627,8 @@ main .self-pic-wrapper img {
 }
 
 @media only screen and (min-width: 1000px) {
-  html {
-    font-size: 18px;
+  * {
+    font-size: 14px;
   }
   body {
     /* --fs-xxl: 3.3rem; */
@@ -747,7 +747,7 @@ main .self-pic-wrapper img {
   }
 }
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1400px) {
   #other-projects .content {
     grid-template-columns: repeat(2, 1fr);
   }
