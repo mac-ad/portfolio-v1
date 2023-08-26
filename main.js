@@ -108,7 +108,7 @@ fetch("./experiences.json")
                 <span class="duration font-mono"> ${experience.duration} </span>
                 <div class="content">
                     <h3 class="designation">${experience.designation}</h3>
-                    <p class="description">
+                    <p class="description secondary">
                     ${experience.description}
                     </p>
                 </div>
@@ -229,3 +229,17 @@ fetch("./otherProjects.json")
       otherProjectsContainer.append(projectContainer);
     });
   });
+
+
+  const technologiesContainer = document.querySelector(".technologies ul");
+
+  fetch("./technologies.json")
+    .then(res => res.json())
+    .then(techs => {
+      techs.forEach(tech => {
+        const li = document.createElement("li");
+        li.classList.add("font-mono");
+        li.innerHTML = tech;
+        technologiesContainer.append(li);
+      })
+    })

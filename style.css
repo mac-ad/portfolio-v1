@@ -2,13 +2,13 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 15px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 15px;
 }
 
 body {
@@ -17,25 +17,6 @@ body {
   --text-normal: rgb(148 163 184);
   --font-inter: "Inter", sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-
-  --fs-xs: 1rem;
-  /* --fs-xxl: 3rem; */
-  /* --fs-xxl: 2.3rem;
-  --fs-xl: 1.5rem;
-  --fs-l: 1.2rem;
-  --fs-s: 0.9rem;
-  --fs-xs: 0.8rem;
-  --fs-n: 1.3rem; */
-
-  --fs-xxxl: 2.3rem;
-  --fs-xxl: 2rem;
-  --fs-xl: 1.3rem;
-  --fs-l: 1.2rem;
-  --fs-s: 0.8rem;
-  --fs-xs: 0.7rem;
-  --fs-nl: 1.1rem;
-
-  --fs-n: 0.9rem;
 
   --green: rgb(94 234 212);
   --green-dark: rgb(172, 218, 211);
@@ -51,12 +32,22 @@ body {
 
   --border-radius: 5px;
 
+  --fs-xxl : 3rem;
+  --fs-xl : 1.3rem;
+  --fs-l : 1.1rem;
+  --fs-n:1rem;
+  --fs-s : .9rem;
+  --fs-xs : .8rem;
+
+  --fs-folder-size : 2rem;
+
   background: var(--navy);
   font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
   color: var(--text-normal);
+  font-size:var(--fs-n);
   line-height: var(--line-height);
 }
 
@@ -177,7 +168,7 @@ h3 {
 }
 
 p.secondary {
-  font-size: var(--fs-n);
+  font-size: var(--fs-s);
   opacity: 0.8;
 }
 
@@ -469,6 +460,10 @@ main .self-pic-wrapper img {
   text-transform: capitalize;
 }
 
+#projects .project-container p{
+  font-size:var(--fs-s);
+}
+
 /* experiences */
 
 .experiences-list {
@@ -540,7 +535,7 @@ main .self-pic-wrapper img {
 }
 
 .other-project-container .project-top .folder svg {
-  font-size: var(--fs-xxxl);
+  font-size: var(--fs-folder-size);
   color: var(--green);
 }
 
@@ -570,10 +565,20 @@ main .self-pic-wrapper img {
   gap: 0.8em;
 }
 
+.other-project-container .project-main p{
+  /* font-size:var(--fs-s); */
+}
+
+footer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2em;
+  margin-top:3em;
+}
+
 @media only screen and (min-width: 700px) {
-  * {
-    font-size: 16px;
-  }
+  
   body {
     --fs-xxl: 2.5rem;
   }
@@ -614,9 +619,7 @@ main .self-pic-wrapper img {
 }
 
 @media only screen and (min-width: 800px) {
-  html {
-    font-size: 18px;
-  }
+  
   body {
     --fs-xxl: 3rem;
   }
@@ -627,9 +630,7 @@ main .self-pic-wrapper img {
 }
 
 @media only screen and (min-width: 1000px) {
-  * {
-    font-size: 14px;
-  }
+  
   body {
     /* --fs-xxl: 3.3rem; */
   }
