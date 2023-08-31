@@ -32,14 +32,14 @@ body {
 
   --border-radius: 5px;
 
-  --fs-xxl : 3rem;
-  --fs-xl : 1.3rem;
-  --fs-l : 1.1rem;
-  --fs-n:1rem;
-  --fs-s : .9rem;
-  --fs-xs : .8rem;
+  --fs-xxl: 3rem;
+  --fs-xl: 1.3rem;
+  --fs-l: 1.1rem;
+  --fs-n: 1rem;
+  --fs-s: 0.9rem;
+  --fs-xs: 0.8rem;
 
-  --fs-folder-size : 2rem;
+  --fs-folder-size: 2rem;
 
   background: var(--navy);
   font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
@@ -47,7 +47,7 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
   color: var(--text-normal);
-  font-size:var(--fs-n);
+  font-size: var(--fs-n);
   line-height: var(--line-height);
 }
 
@@ -144,7 +144,8 @@ h3 {
   /* font-weight: 600; */
 }
 
-.hover-highlight:hover {
+.hover-highlight:hover,
+.hover-highlight:hover svg {
   color: var(--text-highlight);
   transition: color 200ms ease-in-out;
 }
@@ -291,7 +292,7 @@ main section {
   /* border: 1px solid red; */
 }
 
-main >*{
+main > * {
   /* border:1px solid red; */
 }
 
@@ -464,8 +465,8 @@ main .self-pic-wrapper img {
   text-transform: capitalize;
 }
 
-#projects .project-container p{
-  font-size:var(--fs-s);
+#projects .project-container p {
+  font-size: var(--fs-s);
 }
 
 /* experiences */
@@ -569,20 +570,19 @@ main .self-pic-wrapper img {
   gap: 0.8em;
 }
 
-.other-project-container .project-main p{
+.other-project-container .project-main p {
   /* font-size:var(--fs-s); */
 }
 
-footer{
-  display:flex;
+footer {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap:2em;
+  gap: 2em;
   /* margin-top:3em; */
 }
 
 @media only screen and (min-width: 700px) {
-  
   body {
     --fs-xxl: 2.5rem;
   }
@@ -623,7 +623,6 @@ footer{
 }
 
 @media only screen and (min-width: 800px) {
-  
   body {
     --fs-xxl: 3rem;
   }
@@ -634,7 +633,6 @@ footer{
 }
 
 @media only screen and (min-width: 1000px) {
-  
   body {
     /* --fs-xxl: 3.3rem; */
   }

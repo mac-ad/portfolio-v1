@@ -1,5 +1,18 @@
 [
-    {
-        "icon" :""
-     }
+  {
+    "icon": "github",
+    "link": "https://github.com/mac-ad"
+  },
+  {
+    "icon": "instagram",
+    "link": "https://www.instagram.com/__macad/"
+  },
+  {
+    "icon": "linkedin",
+    "link": "www.linkedin.com/in/ashish-khatri-01933128b"
+  },
+  {
+    "icon": "twitter",
+    "link": "https://twitter.com/_macad"
+  }
 ]

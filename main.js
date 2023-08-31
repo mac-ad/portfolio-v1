@@ -230,16 +230,46 @@ fetch("./otherProjects.json")
     });
   });
 
+const technologiesContainer = document.querySelector(".technologies ul");
 
-  const technologiesContainer = document.querySelector(".technologies ul");
+fetch("./technologies.json")
+  .then((res) => res.json())
+  .then((techs) => {
+    techs.forEach((tech) => {
+      const li = document.createElement("li");
+      li.classList.add("font-mono");
+      li.innerHTML = tech;
+      technologiesContainer.append(li);
+    });
+  });
 
-  fetch("./technologies.json")
-    .then(res => res.json())
-    .then(techs => {
-      techs.forEach(tech => {
-        const li = document.createElement("li");
-        li.classList.add("font-mono");
-        li.innerHTML = tech;
-        technologiesContainer.append(li);
-      })
-    })
+async function createSocialLinks() {
+  const socialLinksContainer = document.createElement("div");
+  socialLinksContainer.classList.add("social-links");
+
+  let res = await fetch("./socials.json");
+  const socials = await res.json();
+
+  socials.forEach(async (social) => {
+    res = await fetch(`./svgs/${social.icon}.svg`);
+    const svgText = await res.text();
+    const a = document.createElement("a");
+    a.classList.add("hover-highlight");
+    a.href = social.link;
+    a.innerHTML = svgText;
+    a.target = "_blank";
+    socialLinksContainer.append(a);
+  });
+
+  console.log(socialLinksContainer);
+  return socialLinksContainer;
+}
+
+async function addSocialLinks() {
+  const headersContainer = document.querySelector("header");
+  const footer = document.querySelector("footer");
+  headersContainer.append(await createSocialLinks());
+  footer.insertBefore(await createSocialLinks(), footer.children[0]);
+}
+
+addSocialLinks();
