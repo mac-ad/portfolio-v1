@@ -147,6 +147,7 @@ h3 {
 .hover-highlight:hover,
 .hover-highlight:hover svg {
   color: var(--text-highlight);
+  fill: var(--text-highlight);
   transition: color 200ms ease-in-out;
 }
 
@@ -199,6 +200,8 @@ header > * {
 
 .social-links a svg {
   color: var(--text-normal);
+  fill: var(--text-normal);
+
   font-size: var(--fs-xl);
 }
 
