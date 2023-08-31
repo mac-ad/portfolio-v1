@@ -30,7 +30,7 @@ body {
 
   --project-hover-bg: rgba(255, 255, 255, 0.064);
 
-  --border-radius: 5px;
+  --border-radius: 0px;
 
   --fs-xxl: 3rem;
   --fs-xl: 1.3rem;
@@ -38,6 +38,7 @@ body {
   --fs-n: 1rem;
   --fs-s: 0.9rem;
   --fs-xs: 0.8rem;
+  --fs-svg: 1.5rem;
 
   --fs-folder-size: 2rem;
 
@@ -188,7 +189,7 @@ header > * {
 
 .social-links {
   display: flex;
-  gap: 1.5em;
+  gap: 1em;
   margin-top: 1em;
 }
 
@@ -201,8 +202,7 @@ header > * {
 .social-links a svg {
   color: var(--text-normal);
   fill: var(--text-normal);
-
-  font-size: var(--fs-xl);
+  font-size: var(--fs-svg);
 }
 
 .techs-used {
