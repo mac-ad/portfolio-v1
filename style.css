@@ -563,7 +563,7 @@ main .self-pic-wrapper img {
 }
 
 .other-project-techs-used li {
-  font-size: var(--fs-s);
+  font-size: var(--fs-xs);
   text-transform: capitalize;
 }
 
@@ -614,24 +614,21 @@ footer {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 2em;
-    /* padding: 1.5em; */
-    /* cursor: pointer; */
     border-radius: var(--border-radius);
     transition: all 300ms ease;
   }
 
   .experiences-list li:hover {
-    /* background: rgba(255, 255, 255, 0.109); */
+  }
+
+  #other-projects .content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 800px) {
   body {
     --fs-xxl: 3rem;
-  }
-
-  #other-projects .content {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -667,6 +664,10 @@ footer {
     gap: 1em;
     margin-top: 1em;
   }
+
+  #other-projects .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -679,7 +680,7 @@ footer {
   }
 
   #other-projects .content {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   main {
@@ -754,7 +755,7 @@ footer {
 }
 
 @media only screen and (min-width: 1400px) {
-  #other-projects .content {
+  /* #other-projects .content {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }
