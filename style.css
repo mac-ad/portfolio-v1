@@ -50,6 +50,16 @@ body {
   color: var(--text-normal);
   font-size: var(--fs-n);
   line-height: var(--line-height);
+
+  /* background: radial-gradient(
+    600px at var(--gradient-x) var(--gradient-y),
+    #132f59,
+    red 80%
+  ); */
+}
+
+body > div {
+  /* background: radial-gradient(600px at 500px 500px, #132f5965, transparent 80%); */
 }
 
 a {
@@ -157,11 +167,20 @@ h3 {
   transition: color 200ms ease-in-out;
 }
 
+.hover-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 50%;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   gap: 5em;
-  margin-top: 5em;
+  /* margin-top: 5em; */
+  padding-top: 5em;
 }
 
 .wrapper > * {

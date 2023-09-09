@@ -273,3 +273,16 @@ async function addSocialLinks() {
 }
 
 addSocialLinks();
+
+if (window.innerWidth > 800) {
+  window.onmousemove = (e) => {
+    const body = document.querySelector("#main-wrapper");
+    console.log(document.querySelector("body").scrollHeight);
+    body.style.setProperty(
+      "background",
+      `radial-gradient(500px at ${e.clientX}px ${
+        window.scrollY + e.clientY
+      }px ,#132f5965,transparent 100%)`
+    );
+  };
+}
