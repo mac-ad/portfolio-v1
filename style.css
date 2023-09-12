@@ -2,7 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 15px;
+  font-size: 1.2rem;
 }
 
 * {
@@ -60,6 +60,7 @@ body {
 
 body > div {
   /* background: radial-gradient(600px at 500px 500px, #132f5965, transparent 80%); */
+  transition: background 200ms ease;
 }
 
 a {
@@ -118,7 +119,7 @@ img {
 
 .wrapper {
   width: 85%;
-  max-width: 1500px;
+  max-width: 1800px;
   margin-inline: auto;
 }
 
@@ -540,6 +541,7 @@ main .self-pic-wrapper img {
   padding: 2em 1.5em;
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: all 200ms ease;
+  /* max-width: 500px; */
 }
 
 .other-project-container > *:last-child {
@@ -605,6 +607,10 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
+  html {
+    font-size: 1.2rem;
+  }
+
   body {
     --fs-xxl: 2.5rem;
   }
@@ -641,7 +647,7 @@ footer {
   }
 
   #other-projects .content {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
   }
 }
 
@@ -658,6 +664,7 @@ footer {
 
   .wrapper {
     /* width: 80%; */
+    padding-top: 0;
   }
 
   #projects > .content {
@@ -685,7 +692,7 @@ footer {
   }
 
   #other-projects .content {
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 }
 
