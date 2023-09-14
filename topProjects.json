@@ -1,16 +1,16 @@
 [
   {
-    "title": "Ecommerce",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, ut? Rerum corporis quis nesciunt ducimus obcaecati dolor dicta consequatur eum.",
-    "techs": ["ReactJs", "Context Api", "Vercel"],
+    "title": "Movieflix",
+    "description": "A movie info website which uses TMDB API for the data.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto laborum ",
+    "techs": ["ReactJs", "React Query", "Context Api"],
     "github": "#",
     "liveLink": "#",
     "image": "daraz2.png"
   },
   {
-    "title": "End-2-End encrypted realtime chatting application",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, ut? Rerum corporis quis nesciunt ducimus obcaecati dolor dicta consequatur eum.",
-    "techs": ["ReactJs", "Redis", "Vercel", "nodeJS", "Socket.io"],
+    "title": "Chatluxe",
+    "description": "A movie info website which uses TMDB API for the data.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto laborum ",
+    "techs": ["ReactJs", "React Query", "Context Api"],
     "github": "#",
     "liveLink": "#",
     "image": "chatluxe.png"

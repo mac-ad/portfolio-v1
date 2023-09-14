@@ -19,3 +19,21 @@
   //   "github": "#",
   //   "liveLink": "#"
   // },
+
+  [
+ 
+  {
+    "title": "Github profile viewer",
+    "description": "Lorem ipsum dolor sittecto laborum vel odit, sapiente totam.",
+    "techs": ["ReactJS", "Github_api"],
+    "github": "#",
+    "liveLink": "#"
+  },
+  {
+    "title": "MovieFlix",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto laborum vel odit, sapiente totam.",
+    "techs": ["ReactJs", "Vercel", "Redux", "TMDB_API"],
+    "github": "#",
+    "liveLink": "#"
+  }
+]

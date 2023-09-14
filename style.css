@@ -13,8 +13,8 @@ html {
 
 body {
   /* --bg-color: #020c1b; */
-  --text-highlight: rgba(226, 232, 240, 0.859);
-  --text-normal: rgb(148 163 184);
+  --focused-text: rgba(255, 255, 255, 0.859);
+  --text-normal: rgb(151, 165, 184);
   --font-inter: "Inter", sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
@@ -30,19 +30,34 @@ body {
 
   --project-hover-bg: rgba(255, 255, 255, 0.064);
 
-  --border-radius: 0px;
+  --border-radius: 5px;
+  --border-radius-2: 10px;
 
   --fs-xxl: 3rem;
   --fs-xl: 1.3rem;
   --fs-l: 1.1rem;
   --fs-n: 1rem;
   --fs-s: 0.9rem;
-  --fs-xs: 0.8rem;
+  --fs-xs: 0.76rem;
   --fs-svg: 1.5rem;
 
   --fs-folder-size: 2rem;
 
-  background: var(--navy);
+  /* test colors */
+  --black: #0a0118;
+
+  --primary: var(--green);
+  /* generiic */
+
+  /* --primary: rgba(255, 255, 255, 0.83); */
+
+  --body-bg: var(--black);
+  --highlight-text: var(--primary);
+  --highlight-text-hover: var(--primary);
+  --other-project-card-bg: #151d32;
+  /* --other-project-card-bg: #241f2d; */
+
+  background: var(--body-bg);
   font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -50,16 +65,10 @@ body {
   color: var(--text-normal);
   font-size: var(--fs-n);
   line-height: var(--line-height);
-
-  /* background: radial-gradient(
-    600px at var(--gradient-x) var(--gradient-y),
-    #132f59,
-    red 80%
-  ); */
 }
 
 body > div {
-  /* background: radial-gradient(600px at 500px 500px, #132f5965, transparent 80%); */
+  background: radial-gradient(600px at 500px 500px, #132f593a, transparent 80%);
 }
 
 a {
@@ -91,8 +100,8 @@ img {
   -webkit-writing-mode: vertical-lr;
 } */
 
-.text-highlight {
-  color: var(--text-highlight);
+.focused-text {
+  color: var(--focused-text);
 }
 
 .font-mono {
@@ -101,19 +110,7 @@ img {
 
 .nano-highlight-text {
   font-size: var(--fs-xs);
-  color: var(--green);
-}
-
-.hover-text-green {
-  transition: all 200ms ease;
-}
-
-.text-green {
-  color: var(--green);
-}
-
-.hover-text-green:hover {
-  color: var(--green);
+  color: var(--highlight-text);
 }
 
 .wrapper {
@@ -123,7 +120,6 @@ img {
 }
 
 .wrapper > * {
-  /* border: 1px solid red; */
 }
 
 p {
@@ -157,13 +153,18 @@ h3 {
 
 .hover-highlight:hover,
 .hover-highlight:hover svg {
-  color: var(--text-highlight);
-  fill: var(--text-highlight);
+  color: var(--primary);
+  fill: var(--primary);
   transition: color 200ms ease-in-out;
 }
 
-.hover-highlight-green:hover {
-  color: var(--green);
+.highlight-text {
+  color: var(--highlight-text);
+}
+
+.highlight-text:hover {
+  color: var(--highlight-text-hover);
+  text-decoration: underline;
   transition: color 200ms ease-in-out;
 }
 
@@ -171,7 +172,6 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-
   border-radius: 50%;
 }
 
@@ -179,7 +179,6 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 5em;
-  /* margin-top: 5em; */
   padding-top: 5em;
 }
 
@@ -226,21 +225,18 @@ header > * {
 
 .techs-used {
   display: flex;
-  gap: 0.4em;
+  gap: 0.5em;
   width: 100%;
   flex-wrap: wrap;
 }
 
 .techs-used li {
-  margin-right: 1em;
-  /* background: rgba(45, 212, 191, 0.1); */
-  border-radius: 5em;
+  border-radius: var(--border-radius);
   font-size: var(--fs-xs);
   font-family: var(--font-mono);
-  color: rgba(94, 234, 213, 0.891);
-  color: rgba(64, 186, 168, 0.891);
-
-  /* font-weight: 600; */
+  color: var(--green);
+  background: rgba(2, 255, 204, 0.104);
+  padding: 0.5em 1em;
 }
 
 header p.nano-highlight-text {
@@ -267,7 +263,7 @@ header a.special-btn-2 {
 header .buttons-container {
   display: flex;
   flex-direction: column;
-  color: var(--green);
+  color: var(--primary);
   text-transform: capitalize;
   gap: 1em;
 }
@@ -276,8 +272,8 @@ header a.special-btn button,
 header a.special-btn-2 button {
   background: none;
   border: none;
-  color: var(--green);
-  border: 1px solid var(--green);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   padding: 1em 2.5em;
   border-radius: var(--border-radius);
   pointer-events: none;
@@ -285,7 +281,7 @@ header a.special-btn-2 button {
 
 header a.special-btn-2 button {
   background: rgba(45, 212, 191, 0.1);
-  color: var(--green);
+  color: var(--primary);
   border-radius: 0;
 }
 
@@ -297,7 +293,7 @@ header a.special-btn-2 button {
 }
 
 .special-hover:hover {
-  box-shadow: 5px 5px 0px var(--green);
+  box-shadow: 5px 5px 0px var(--primary);
   transform: translate(-5px, -5px);
 }
 
@@ -338,16 +334,14 @@ main .title {
   text-transform: uppercase;
 }
 
-main .title:after {
-  /* content: ""; */
+/* main .title:after {
   display: block;
   height: 1px;
   width: 300px;
   position: relative;
-  background: var(--light-navy);
   left: 20px;
   transform: translateY(-50%);
-}
+} */
 
 .technologies ul {
   display: flex;
@@ -366,7 +360,7 @@ main .title:after {
   position: absolute;
   margin-left: -1em;
   content: "▹";
-  color: var(--green);
+  color: var(--primary);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -412,11 +406,10 @@ main .self-pic-wrapper img {
   display: flex;
   flex-direction: column;
   gap: 6em;
-  /* border: 1px solid red; */
 }
 
 #projects .project-content .project-links svg {
-  font-size: var(--fs-n);
+  font-size: var(--fs-l);
 }
 
 #projects .project-container {
@@ -463,11 +456,11 @@ main .self-pic-wrapper img {
 }
 
 #projects .project-image img {
-  width: 160px;
-  height: 100px;
+  width: 130px;
+  aspect-ratio: 14/9;
   object-fit: cover;
-  /* mix-blend-mode: multiply; */
   object-fit: cover;
+  border-radius: var(--border-radius);
 }
 
 #projects .project-container {
@@ -480,7 +473,11 @@ main .self-pic-wrapper img {
 #projects .project-container .project-content {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.7em;
+}
+
+#projects .project-container .project-content .project-links {
+  margin-top: 0.5em;
 }
 
 #projects .project-container .project-content h3 {
@@ -536,10 +533,11 @@ main .self-pic-wrapper img {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  background: var(--light-navy);
+  background: var(--other-project-card-bg);
   padding: 2em 1.5em;
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: all 200ms ease;
+  border-radius: var(--border-radius-2);
 }
 
 .other-project-container > *:last-child {
@@ -561,9 +559,13 @@ main .self-pic-wrapper img {
   justify-content: space-between;
 }
 
+.other-project-container svg:hover {
+  color: var(--primary);
+}
+
 .other-project-container .project-top .folder svg {
   font-size: var(--fs-folder-size);
-  color: var(--green);
+  color: var(--primary);
 }
 
 .other-project-links {
@@ -601,7 +603,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 2em;
-  /* margin-top:3em; */
 }
 
 @media only screen and (min-width: 700px) {
@@ -615,14 +616,14 @@ footer {
 
   #projects .project-container {
     flex-direction: row;
-    /* padding: 1.5em; */
+    padding: 1.5em;
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: all 400ms ease;
   }
 
   #projects .project-container:hover {
-    /* background: var(--project-hover-bg); */
+    background: var(--project-hover-bg);
   }
 
   #projects .project-container > * {
@@ -658,12 +659,13 @@ footer {
 
   .wrapper {
     /* width: 80%; */
+    padding-top: 0;
   }
 
   #projects > .content {
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 2em;
   }
 
   #projects .project-container .project-content p {

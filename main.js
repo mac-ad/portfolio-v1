@@ -284,5 +284,16 @@ if (window.innerWidth > 800) {
         window.scrollY + e.clientY
       }px ,#132f5965,transparent 100%)`
     );
+    body.animate(
+      {
+        background: `radial-gradient(500px at ${e.clientX}px ${
+          window.scrollY + e.clientY
+        }px ,#132f593a,transparent 100%)`,
+      },
+      {
+        duration: 200,
+        fill: "forwards",
+      }
+    );
   };
 }
