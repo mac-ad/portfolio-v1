@@ -657,10 +657,7 @@ footer {
     /* --fs-xxl: 3.3rem; */
   }
 
-  .wrapper {
-    /* width: 80%; */
-    padding-top: 0;
-  }
+  
 
   #projects > .content {
     display: flex;
@@ -697,7 +694,7 @@ footer {
     flex-direction: row;
     gap: 4em;
     width: 90%;
-    margin-top: 0;
+    padding-top:0;
   }
 
   #other-projects .content {
