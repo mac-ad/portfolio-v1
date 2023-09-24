@@ -90,6 +90,33 @@ img {
   display: block;
 }
 
+a.underline {
+  text-decoration: none !important;
+  position: relative;
+  width: fit-content;
+}
+
+a.underline:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transition: transform 200ms ease;
+  background: var(--green);
+  transform-origin: left;
+}
+
+a.underline:hover:before {
+  transform: scaleX(1);
+}
+
+.fs-xs {
+  font-size: var(--fs-xs);
+}
+
 /* .right-verticle {
   border: 1px solid red;
   position: fixed;
@@ -337,7 +364,7 @@ a.special-btn-2 {
 
 header .buttons-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   color: var(--primary);
   text-transform: capitalize;
   gap: 1em;
@@ -363,7 +390,7 @@ a.special-btn-2 button {
   border-radius: 0;
 }
 
-.special-hover {
+/* .special-hover {
   border-radius: var(--border-radius);
   position: relative;
   transition: all 200ms ease;
@@ -371,6 +398,15 @@ a.special-btn-2 button {
 }
 
 .special-hover:hover {
+  box-shadow: 3px 3px 0px var(--primary);
+  transform: translate(-3px, -3px);
+} */
+
+.special-hover {
+  border-radius: var(--border-radius);
+  position: relative;
+  transition: all 200ms ease;
+  background: var(--bg-color);
   box-shadow: 3px 3px 0px var(--primary);
   transform: translate(-3px, -3px);
 }
@@ -695,8 +731,8 @@ main .self-pic-wrapper img {
   gap: 0.8em;
 }
 
-.other-project-container .project-main p {
-  /* font-size:var(--fs-s); */
+#other-projects a.underline {
+  margin-inline: auto;
 }
 
 footer {
@@ -826,6 +862,16 @@ footer {
     margin-top: 0;
   }
 
+  .special-hover {
+    box-shadow: unset;
+    transform: unset;
+  }
+
+  .special-hover:hover {
+    box-shadow: 3px 3px 0px var(--primary);
+    transform: translate(-3px, -3px);
+  }
+
   #other-projects .content {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -895,7 +941,7 @@ footer {
   }
 
   main {
-    padding: calc(50vh - var(--nav-height)) 0 3em;
+    padding: calc(50vh - var(--nav-height)) 0 2.9em;
   }
 
   section h2 {
@@ -904,6 +950,11 @@ footer {
 
   main section:last-child {
     margin-bottom: 0;
+  }
+
+  footer > a {
+    display: none !important;
+    border: 1px solid red;
   }
 }
 
