@@ -1,0 +1,123 @@
+.archive-wrapper {
+  --fs-ar-xxl: 2rem;
+
+  --white: rgba(255, 255, 255, 0.786);
+
+  width: 90%;
+  max-width: 1500px;
+  margin-inline: auto;
+  padding: 2em 0;
+}
+
+.archive-h2 {
+  font-size: var(--fs-ar-xxl);
+  color: var(--white);
+}
+
+.archive-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.archive-header span {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 200ms ease;
+}
+
+.archive-header span:hover {
+  opacity: 1;
+}
+
+.archive-container svg {
+  pointer-events: none;
+  font-size: 2rem;
+}
+
+.archive-header .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.archive-main,
+table {
+  width: 100%;
+}
+
+.archive-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.archive-main .techs {
+  font-size: var(--fs-xs);
+  font-family: var(--font-mono);
+}
+
+.archive-main span a svg {
+  font-size: var(--fs-l);
+}
+
+.archive-container span a {
+  margin-right: 0.6em;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 0.8em 0;
+}
+
+table {
+  border-spacing: 0;
+}
+
+table thead th {
+  padding-bottom: 1.5em;
+}
+
+table tbody tr {
+  transition: background 300ms ease;
+}
+
+table tbody tr:hover {
+  background: #ffffff29;
+}
+
+table .built-with {
+  display: none;
+}
+
+table .links {
+  display: flex;
+  gap: 0.8em;
+}
+
+.fs-s {
+  font-size: var(--fs-s);
+}
+
+.archive-main table td.project-title {
+  font-weight: 700;
+  color: var(--white);
+}
+
+@media only screen and (min-width: 800px) {
+  .archive-container {
+    --fs-ar-xxl: 3rem;
+  }
+
+  table .built-with {
+    display: table-cell;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .archive-wrapper {
+    width: 80%;
+  }
+}
