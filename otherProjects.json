@@ -1,9 +1,9 @@
 [
   {
-    "title": "Github profile viewer",
-    "description": "Lorem ipsum dolor sittecto laborum vel odit, sapiente totam.",
-    "techs": ["ReactJS", "Github_api"],
-    "github": "#",
-    "liveLink": "#"
+    "title": "Landing Pages",
+    "description": "List of landing pages I have built during my practice",
+    "techs": ["HTML", "CSS", "JS"],
+    "github": "https://github.com/mac-ad/landingPages",
+    "liveLink": "/archive.html"
   }
 ]

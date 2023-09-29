@@ -9,12 +9,17 @@ async function addArchiveProjects() {
   fetch("./archives.json")
     .then((res) => res.json())
     .then((projects) => {
-      projects.forEach((project) => {
+      projects.forEach((project, index) => {
         const tr = document.createElement("tr");
+
         tr.innerHTML = `
-          <td class = "highlight-text font-mono fs-s" width = "15%">${project.year}</td>
+        <td class="highlight-text font-mono fs-s" width="15%">0${
+          index + 1
+        }.</td>
                   <td class="project-title">${project.title}</td>
-                  <td class = "techs built-with" width = "40%">${project.builtWith}</td>
+                  <td class = "techs built-with" width = "40%">${
+                    project.builtWith
+                  }</td>
                   <td class = "links">
                     <span class="live-link">
                       <a href= "${project.liveLink}" 

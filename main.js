@@ -55,7 +55,7 @@ function insertTopProjects() {
         const projectsLinks = document.createElement("div");
         projectsLinks.classList.add("project-links");
         projectsLinks.innerHTML = `
-      <a href="${project.github}" class="hover-highlight-green text-highlight">
+      <a href="${project.github}" target = "_blank" class="hover-highlight-green text-highlight">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
@@ -75,7 +75,7 @@ function insertTopProjects() {
                     ></path>
                   </svg>
                 </a>
-                <a href="${project.liveLink}" class="hover-highlight-green text-highlight">
+                <a href="${project.liveLink}"  target = "_blank" class="hover-highlight-green text-highlight">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"

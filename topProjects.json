@@ -1,20 +1,20 @@
 [
   {
-    "title": "MovieFlix",
-    "shortDescription": "Simple movie info website powered by TMDB API useful for discovering movies",
-    "description": "MovieFlix is a feature-rich movie information website that leverages the power of The Movie Database (TMDB) API to provide users with a comprehensive and user-friendly platform for exploring and discovering movies.",
-    "techs": ["ReactJs", "React Query", "TMDB API"],
-    "github": "#",
-    "liveLink": "#",
-    "image": "movieFlix.png"
-  },
-  {
     "title": "Daraz2",
     "shortDescription": "An ecommerce platform where user can view others products and also become seller themselves and list products.",
     "description": "Daraz2 is an ecommerce platform where user can list their products with the permission of admin and leverage the power of internet to sell their products.",
-    "techs": ["ReactJs", "Context Api"],
-    "github": "#",
+    "techs": ["ReactJs", "Context Api", "Vanila CSS"],
+    "github": "https://github.com/mac-ad/alldokanfrontend",
     "liveLink": "https://daraz2.vercel.app",
     "image": "daraz2.png"
+  },
+  {
+    "title": "MovieFlix",
+    "shortDescription": "Simple movie info website powered by TMDB API useful for discovering movies",
+    "description": "MovieFlix is a feature-rich movie information website that leverages the power of The Movie Database (TMDB) API to provide users with a comprehensive and user-friendly platform for exploring and discovering movies.",
+    "techs": ["ReactJs", "React Query", "TMDB API", "Vanila CSS"],
+    "github": "https://github.com/mac-ad/movieflix",
+    "liveLink": "https://movieflix-site.vercel.app",
+    "image": "movieFlix.png"
   }
 ]
