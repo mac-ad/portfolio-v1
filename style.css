@@ -265,6 +265,10 @@ nav {
   justify-content: space-between;
 }
 
+.project-content a {
+  pointer-events: none;
+}
+
 nav ul {
   gap: 2em;
   display: none;

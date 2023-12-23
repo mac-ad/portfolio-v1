@@ -31,7 +31,7 @@ function insertTopProjects() {
         projectContent.classList.add("project-content");
 
         projectContent.innerHTML = `
-      <a href="#"
+      <a href="/"
           ><h3 class="hover-text-green text-highlight">${project.title}</h3></a
       >
       <p class="description secondary long">
