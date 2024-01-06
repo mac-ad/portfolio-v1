@@ -71,6 +71,11 @@ body {
   line-height: var(--line-height);
 }
 
+.heart-emoji{
+  font-size:1.4rem;
+  color:red;
+}
+
 body > div {
   /* background: radial-gradient(600px at 500px 500px, #132f593a, transparent 80%); */
 }
