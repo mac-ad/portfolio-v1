@@ -71,9 +71,9 @@ body {
   line-height: var(--line-height);
 }
 
-.heart-emoji{
-  font-size:1.4rem;
-  color:red;
+.heart-emoji {
+  font-size: 1.4rem;
+  color: red;
 }
 
 body > div {
@@ -270,7 +270,7 @@ nav {
   justify-content: space-between;
 }
 
-.project-content a {
+.project-content > a {
   pointer-events: none;
 }
 
@@ -474,8 +474,11 @@ main .title {
 } */
 
 .technologies ul {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
+  gap: 1em; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1em;
   margin-top: 1em;
 }
@@ -588,15 +591,28 @@ main .self-pic-wrapper img {
 
 #projects .project-image {
   /* background: var(--green-dark); */
-  /* border: 1px solid red; */
+  /* border: 1px solid white; */
   border-radius: var(--border-radius);
-  width: 120px;
-  max-width: 150px;
+  /* width: 150px; */
+  position: relative;
 }
 
 #projects .project-image img {
   aspect-ratio: 16/9;
+  /* border: 1px solid red; */
   object-fit: cover;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+#projects .project-image:before {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
   border-radius: var(--border-radius);
 }
 
@@ -609,7 +625,7 @@ main .self-pic-wrapper img {
 }
 
 #projects .project-container p.long {
-  display: none;
+  /* display: none; */
 }
 
 #projects .project-container .project-content {
@@ -705,7 +721,8 @@ main .self-pic-wrapper img {
   justify-content: space-between;
 }
 
-.other-project-container svg:hover {
+.other-project-container svg:hover,
+.project-content .project-links svg:hover {
   color: var(--primary);
 }
 
@@ -749,6 +766,12 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 2em;
+  text-align: center;
+}
+
+footer span {
+  max-width: 300px;
+  line-height: 1.5;
 }
 
 @media only screen and (min-width: 700px) {
@@ -765,10 +788,8 @@ footer {
   }
 
   #projects .project-container {
-    flex-direction: row;
-    /* padding: 1.5em; */
-    border-radius: var(--border-radius);
-    /* cursor: pointer; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     transition: all 400ms ease;
   }
 
@@ -786,6 +807,10 @@ footer {
 
   #projects .project-container p.short {
     display: none;
+  }
+
+  .technologies ul {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .experiences-list li {
