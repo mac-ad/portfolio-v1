@@ -5,8 +5,12 @@ function goBack() {
   window.location.href = "/index.html";
 }
 
+// constants
+const data_base_path = "./data/";
+const archivePath = `${data_base_path}archives.json`;
+
 async function addArchiveProjects() {
-  fetch("./archives.json")
+  fetch(archivePath)
     .then((res) => res.json())
     .then((projects) => {
       projects.forEach((project, index) => {

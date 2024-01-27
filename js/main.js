@@ -9,8 +9,16 @@ const otherProjectsContainer = document.querySelector(
 
 const technologiesContainer = document.querySelector(".technologies ul");
 
+// constants
+const data_base_path = "./data/";
+const topProjectsPath = `${data_base_path}topProjects.json`;
+const experiencesPath = `${data_base_path}experiences.json`;
+const otherProjectsPath = `${data_base_path}otherProjects.json`;
+const technologiesPath = `${data_base_path}technologies.json`;
+const socialsPath = `${data_base_path}socials.json`;
+
 function insertTopProjects() {
-  fetch("./topProjects.json")
+  fetch(topProjectsPath)
     .then((res) => res.json())
     .then((projects) => {
       console.log(projects);
@@ -110,7 +118,7 @@ function insertTopProjects() {
 }
 
 function insertExperiences() {
-  fetch("./experiences.json")
+  fetch(experiencesPath)
     .then((res) => res.json())
     .then((experiences) => {
       experiences.forEach((experience) => {
@@ -131,7 +139,7 @@ function insertExperiences() {
 }
 
 function insertOtherProjects() {
-  fetch("./otherProjects.json")
+  fetch(otherProjectsPath)
     .then((res) => res.json())
     .then((projects) => {
       projects.forEach((project) => {
@@ -252,7 +260,7 @@ function insertOtherProjects() {
 }
 
 function insertTechnologies() {
-  fetch("./technologies.json")
+  fetch(technologiesPath)
     .then((res) => res.json())
     .then((techs) => {
       techs.forEach((tech) => {
@@ -268,7 +276,7 @@ async function createSocialLinks() {
   const socialLinksContainer = document.createElement("div");
   socialLinksContainer.classList.add("social-links");
 
-  let res = await fetch("./socials.json");
+  let res = await fetch(socialsPath);
   const socials = await res.json();
 
   socials.forEach(async (social) => {
