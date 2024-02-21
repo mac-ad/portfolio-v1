@@ -652,13 +652,14 @@ main .self-pic-wrapper img {
 .experiences-list {
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 3em;
 }
 
 .experiences-list li {
   display: flex;
   flex-direction: column;
-  gap: 1.3em;
+  gap: 0.5em;
+  /* border: 1px solid red; */
 }
 
 .experiences-list li .content {
@@ -668,11 +669,45 @@ main .self-pic-wrapper img {
 }
 
 .experiences-list li p {
-  opacity: 0.68;
+  opacity: 0.8;
+  margin-bottom: 0.5em;
 }
 
 .experiences-list .duration {
   white-space: nowrap;
+  font-size: var(--fs-s);
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.experiences-list .company {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  cursor: pointer;
+}
+
+.experiences-list .company h3 {
+  font-weight: 500;
+}
+
+.experiences-list .company:hover {
+  color: var(--green);
+}
+
+.experiences-list .company svg {
+  transition: all 200ms ease;
+  margin-top: -2px;
+}
+
+.experiences-list .company:hover svg {
+  transform: translateY(-2px);
+}
+
+.experiences-list .designation,
+.experiences-list .duration {
+  font-weight: 600;
+  opacity: 0.6;
 }
 
 /* other projects */
@@ -814,12 +849,41 @@ footer span {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .experiences-list li {
+  .experiences-list > li {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2em;
+    grid-template-columns: 0.5fr 3fr;
+    grid-column-gap: 2em;
     border-radius: var(--border-radius);
     transition: all 300ms ease;
+    max-width: 700px;
+  }
+
+  .experiences-list > li > * {
+  }
+
+  .experiences-list li .duration {
+    grid-row: 1/-1;
+  }
+
+  .experiences-list li .content,
+  .experiences-list li .techs-used {
+    grid-column: 2/2;
+  }
+
+  .experiences-list li .company {
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+
+  .experiences-list li .designation {
+    grid-column: 2/2;
+  }
+
+  .experiences-list .techs-used {
+    justify-content: flex-start !important;
+  }
+
+  .experiences-list .techs-used li {
   }
 
   .experiences-list li:hover {

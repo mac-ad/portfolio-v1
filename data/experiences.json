@@ -1,7 +1,20 @@
 [
   {
-    "duration": "2019 -- Present",
-    "designation": "Self Taught Developer",
-    "description": "Learnt various frontend technologies like HTML, CSS, JS, React and backend technologies like Nodejs, MongoDB"
+    "duration": "2024 (March) -- Present",
+    "designation": "Frontend Developer Intern",
+    "company": {
+      "name": "Everestwalk Groups",
+      "url": "https://everestwalk.com/"
+    },
+    "techs": [
+      "NextJS",
+      "TailwindCSS",
+      "HTML",
+      "CSS",
+      "ReactJS",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "description": "Working on real world projects with latest technologies and solving real world problems of client."
   }
 ]

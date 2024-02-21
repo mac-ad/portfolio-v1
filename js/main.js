@@ -125,13 +125,46 @@ function insertExperiences() {
         const li = document.createElement("li");
         li.innerHTML = `
                 <span class="duration font-mono"> ${experience.duration} </span>
+                <span class="designation"> ${experience.designation} </span>
+                <a href = "${experience.company.url}" target = "_blank" class="company"><h3 >${experience.company.name} <svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                width="1em"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <title>External Link</title>
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg></h3></a>
                 <div class="content">
-                    <h3 class="designation">${experience.designation}</h3>
+                   
                     <p class="description secondary">
                     ${experience.description}
                     </p>
+                    
                 </div>
             `;
+
+        const ul = document.createElement("ul");
+        ul.classList.add("techs-used");
+
+        experience?.techs.forEach((tech) => {
+          const li = document.createElement("li");
+          li.innerHTML = tech;
+          ul.append(li);
+        });
+
+        li.append(ul);
 
         experienceListContainer.append(li);
       });
@@ -329,3 +362,4 @@ addSocialLinks();
 insertTopProjects();
 insertOtherProjects();
 insertTechnologies();
+insertExperiences();
