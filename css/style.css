@@ -71,6 +71,10 @@ body {
   line-height: var(--line-height);
 }
 
+p {
+  max-width: 60ch;
+}
+
 .heart-emoji {
   font-size: 1.4rem;
   color: red;
@@ -234,7 +238,7 @@ h3 {
   /* margin: 5em 0 0; */
 }
 
-p.secondary {
+.secondary {
   font-size: var(--fs-s);
   opacity: 0.8;
 }
@@ -655,11 +659,27 @@ main .self-pic-wrapper img {
   gap: 3em;
 }
 
-.experiences-list li {
+.experiences-list > li {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
   /* border: 1px solid red; */
+  padding: 1em;
+  cursor: pointer;
+}
+
+.experiences-list .description-list {
+  margin-top: -0.5em;
+}
+
+.experiences-list .description-list li {
+  /* list-style: disc; */
+  /* margin-left: 1em; */
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.experiences-list > li:hover {
 }
 
 .experiences-list li .content {

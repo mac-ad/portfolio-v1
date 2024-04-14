@@ -125,8 +125,8 @@ function insertExperiences() {
         const li = document.createElement("li");
         li.innerHTML = `
                 <span class="duration font-mono"> ${experience.duration} </span>
-                <span class="designation"> ${experience.designation} </span>
-                <a href = "${experience.company.url}" target = "_blank" class="company"><h3 >${experience.company.name} <svg
+                <span class="designation"> ${experience.company.name}</span>
+                <a href = "${experience.company.url}" target = "_blank" class="company"><h3 >${experience.designation}  <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
                 viewBox="0 0 24 24"
@@ -148,12 +148,23 @@ function insertExperiences() {
               </svg></h3></a>
                 <div class="content">
                    
-                    <p class="description secondary">
+                    <p class="description ">
                     ${experience.description}
+                     <ul class = "description-list secondary">
+                     </ul>
                     </p>
                     
                 </div>
             `;
+
+        const experienceList = li.querySelector("ul.description-list");
+
+        experience?.contributions.forEach((cont) => {
+          const li = document.createElement("li");
+          li.innerHTML = cont;
+          li.classList.add("secondary-text");
+          experienceList.append(li);
+        });
 
         const ul = document.createElement("ul");
         ul.classList.add("techs-used");

@@ -1,6 +1,6 @@
 [
   {
-    "duration": "2024 (March) -- Present",
+    "duration": "Feb 2024 — May 2024",
     "designation": "Frontend Developer Intern",
     "company": {
       "name": "Everestwalk Groups",
@@ -13,8 +13,13 @@
       "CSS",
       "ReactJS",
       "JavaScript",
-      "TypeScript"
+      "TypeScript",
+      "Zustand",
+      "React hooks form"
     ],
-    "description": "Working on real world projects with latest technologies and solving real world problems of client."
+    "description": "Working on real world projects with latest technologies and solving real world problems of client.",
+    "contributions": [
+      "Worked on the frontend of inventory management software for Dynamic Medical Services DBA Acesso Biologics that included role based authentication dashboards and other functionalities."
+    ]
   }
 ]
