@@ -7,6 +7,15 @@ const otherProjectsContainer = document.querySelector(
   "#other-projects .content"
 );
 
+const resumeBtn = document
+  .getElementById("resumeBtn")
+  .addEventListener("click", (e) => {
+    // e.preventDefault();
+    console.log(window.location);
+    console.log(e.target.dataset.resume);
+    window.open(window.location.href + e.target.dataset.resume);
+  });
+
 const technologiesContainer = document.querySelector(".technologies ul");
 
 // constants
