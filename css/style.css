@@ -15,10 +15,13 @@ body {
   /* --bg-color: #020c1b; */
   --focused-text: rgba(255, 255, 255, 0.859);
   --text-normal: rgb(151, 165, 184);
+  --text-normal: rgb(174, 185, 202);
+
   --font-inter: "Inter", sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
   --green: rgb(94 234 212);
+
   --green-dark: rgb(172, 218, 211);
 
   --green-bg: rgba(17, 106, 92, 0.507);
@@ -54,9 +57,12 @@ body {
   /* --primary: rgba(255, 255, 255, 0.83); */
 
   --body-bg: var(--black);
+  --body-bg: rgb(13, 20, 38);
   --highlight-text: var(--primary);
   --highlight-text-hover: var(--primary);
   --other-project-card-bg: #151d32;
+  --other-project-card-bg: #19223b;
+
   /* --other-project-card-bg: #241f2d; */
 
   --nav-height: 0px;
@@ -214,10 +220,21 @@ h3 {
 }
 
 .hover-gradient {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  border-radius: 50%;
+  background: radial-gradient(
+    600px at 1036px 164px,
+    rgba(29, 79, 216, 0.116),
+    transparent 80%
+  );
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.main {
+  /* border: 1px solid red; */
 }
 
 .wrapper {
@@ -352,6 +369,7 @@ header > * {
   color: var(--green);
   background: rgba(2, 255, 204, 0.104);
   padding: 0.5em 1em;
+  text-transform: uppercase;
 }
 
 header p.nano-highlight-text {
@@ -627,6 +645,15 @@ main .self-pic-wrapper img {
   flex-direction: column;
   gap: 1.5em;
   padding: 2em 0 1em;
+  border-radius: 8px;
+}
+
+#projects .project-container:hover .project-content > a {
+  color: var(--green);
+}
+
+#projects .project-container:hover {
+  cursor: pointer;
 }
 
 #projects .project-container p.long {
@@ -663,20 +690,20 @@ main .self-pic-wrapper img {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  /* border: 1px solid red; */
   /* padding: 1em; */
   cursor: pointer;
 }
 
 .experiences-list .description-list {
   margin-top: -0.5em;
+  font-size: 1rem;
 }
 
 .experiences-list .description-list li {
   /* list-style: disc; */
   /* margin-left: 1em; */
   text-transform: capitalize;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .experiences-list > li:hover {
@@ -911,6 +938,17 @@ footer span {
 
   #other-projects .content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #projects .project-container {
+    margin-left: -2em;
+    padding: 1.3em 1.5em;
+  }
+
+  #projects .project-container:hover {
+    background: rgba(50, 64, 87, 0.455);
+    box-shadow: 0px 0px black, 0px 0px black,
+      inset 0 1px 0 0 rgba(148, 163, 184, 0.1);
   }
 }
 
