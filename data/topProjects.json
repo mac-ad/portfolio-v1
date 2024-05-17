@@ -9,6 +9,15 @@
     "image": "movieFlix.png"
   },
   {
+    "title": "Gppedfop: Pharmacy event informatic website",
+    "shortDescription": "Gppedfop is a global platform providing detailed information on pharmacy events, conferences, and seminars for enthusiasts, students, and professionals.",
+    "description": "Gppedfop is a comprehensive informatics platform dedicated to pharmacy event that is organized on a global level. It provides detailed information, resources, and tools for all pharmacy event enthusiasts, pharmacy students, and professionals interested in staying updated on the activities, conferences, and seminars in the event",
+    "techs": ["HTML", "Vanila CSS", "JS"],
+    "github": "https://github.com/mac-ad/pharmacy-project/tree/main",
+    "liveLink": "https://www.gppedfop.com/index.html",
+    "image": "pharmacy.png"
+  },
+  {
     "title": "Daraz2",
     "shortDescription": "An ecommerce platform where user can view others products and also become seller themselves and list products.",
     "description": "Daraz2 is an ecommerce platform where user can list their products with the permission of admin and leverage the power of internet to sell their products.",

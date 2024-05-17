@@ -401,6 +401,26 @@ header .buttons-container {
   gap: 1em;
 }
 
+nav svg {
+  height: 30px;
+  width: fit-content;
+  color: var(--highlight-text);
+  margin-bottom: -2em;
+}
+
+nav {
+}
+
+.inspiredLink {
+  margin-top: -20px;
+  display: none;
+}
+
+.inspiredLink.footer {
+  margin-top: -20px;
+  display: block;
+}
+
 a.special-btn button,
 a.special-btn-2 button {
   background: none;
@@ -857,6 +877,14 @@ footer span {
   line-height: 1.5;
 }
 
+.inspiredLink a {
+  color: var(--highlight-text);
+}
+
+.inspiredLink a:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 700px) {
   body {
     --fs-xxl: 2.5rem;
@@ -1017,6 +1045,11 @@ footer span {
     gap: 1em;
     width: 90%;
     margin-top: 0;
+  }
+
+  .inspiredLink {
+    margin-top: -20px;
+    display: block;
   }
 
   .special-hover {

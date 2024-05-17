@@ -359,6 +359,39 @@ async function addSocialLinks() {
   footer.insertBefore(await createSocialLinks(), footer.children[0]);
 }
 
+{
+  /* <div class="font-mono fs-xs">
+            <div>Inspired by: Brittany Chiang.</div>
+            <a href="https://v4.brittanychiang.com/">
+              https://v4.brittanychiang.com/
+            </a>
+          </div> */
+}
+
+async function insertInspiration() {
+  console.log("inserting inspiration");
+  const headersContainer = document.querySelector("header");
+  const footer = document.querySelector("footer");
+  const toBeInserted = document.createElement("div");
+  toBeInserted.classList.add("font-mono", "fs-xs", "inspiredLink");
+  toBeInserted.innerHTML = `
+  Inspired by: 
+            <a target = "_blank" href="https://v4.brittanychiang.com/">
+           Brittany Chiang
+            </a>
+  `;
+  headersContainer.append(toBeInserted);
+  const toBeInserted2 = document.createElement("div");
+  toBeInserted2.classList.add("font-mono", "fs-xs", "inspiredLink", "footer");
+  toBeInserted2.innerHTML = `
+  Inspired by: 
+            <a target = "_blank" href="https://v4.brittanychiang.com/">
+           Brittany Chiang
+            </a>
+  `;
+  footer.insertBefore(toBeInserted2, footer.children[0]);
+}
+
 // if (window.innerWidth > 800) {
 //   window.onmousemove = (e) => {
 //     const body = document.querySelector("body > div");
@@ -384,6 +417,7 @@ async function addSocialLinks() {
 // }
 
 addSocialLinks();
+insertInspiration();
 insertTopProjects();
 insertOtherProjects();
 insertTechnologies();
