@@ -1,16 +1,5 @@
 const body = document.querySelector("body");
 
-const hoverCircle = document.querySelector(".hover-gradient");
-
-console.log(body, hoverCircle);
-
-body.addEventListener("mousemove", (e) => {
-  const x = e.clientX;
-  const y = e.clientY;
-  console.log("moved", x, y);
-  hoverCircle.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.116), transparent 80%)`;
-});
-
 const projectsListContainer = document.querySelector("#projects .content");
 const experienceListContainer = document.querySelector(
   "#experiences .experiences-list"
@@ -274,7 +263,7 @@ function insertOtherProjects() {
                 ${
                   project.liveLink
                     ? `<a href= "${project.liveLink}" 
-                        target = "_blank"  
+                        target = ""  
                         class="hover-highlight-green text-highlight"
                       >
                       <svg

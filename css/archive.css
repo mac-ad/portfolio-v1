@@ -84,6 +84,11 @@ table thead th {
 table thead tr > *:first-child,
 table tbody tr > *:first-child {
   width: 70px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+table thead tr > *:last-child,
+table tbody tr > *:last-child {
 }
 
 table tbody tr {
@@ -91,7 +96,10 @@ table tbody tr {
 }
 
 table tbody tr:hover {
-  background: #ffffff29;
+  background: rgba(255, 255, 255, 0.064);
+  cursor: pointer;
+  box-shadow: 0px 0px black, 0px 0px black,
+    inset 0 1px 0 0 rgba(148, 163, 184, 0.1);
 }
 
 table .built-with {
