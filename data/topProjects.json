@@ -1,5 +1,23 @@
 [
   {
+    "title": "Chatluxe : Real Time Chat App (under construction)",
+    "description": "A real time chat app that has clean UI similar to that of Whatsapp.",
+    "techs": [
+      "TypeScript",
+      "NextJS",
+      "MongoDB",
+      "NodeJS",
+      "Zustand",
+      "React Hooks Form",
+      "Fetch Api",
+      "Postman",
+      "JWT authentication"
+    ],
+    "github": "https://github.com/mac-ad/chatluxe",
+    "liveLink": "https://chatluxe.ashishkumarkhatri.com.np/",
+    "image": "chatluxe.png"
+  },
+  {
     "title": "MovieFlix",
     "shortDescription": "Simple movie info website powered by TMDB API useful for discovering movies",
     "description": "MovieFlix is a feature-rich movie information website that leverages the power of The Movie Database (TMDB) API to provide users with a comprehensive and user-friendly platform for exploring and discovering movies.",
@@ -7,15 +25,6 @@
     "github": "https://github.com/mac-ad/movieflix",
     "liveLink": "https://movieflix-site.vercel.app",
     "image": "movieFlix.png"
-  },
-  {
-    "title": "Gppedfop: Pharmacy event informatic website",
-    "shortDescription": "Gppedfop is a global platform providing detailed information on pharmacy events, conferences, and seminars for enthusiasts, students, and professionals.",
-    "description": "Gppedfop is a comprehensive informatics platform dedicated to pharmacy event that is organized on a global level. It provides detailed information, resources, and tools for all pharmacy event enthusiasts, pharmacy students, and professionals interested in staying updated on the activities, conferences, and seminars in the event",
-    "techs": ["HTML", "Vanila CSS", "JS"],
-    "github": "https://github.com/mac-ad/pharmacy-project/tree/main",
-    "liveLink": "https://www.gppedfop.com/index.html",
-    "image": "pharmacy.png"
   },
   {
     "title": "Daraz2",
@@ -26,6 +35,7 @@
     "liveLink": "https://daraz2.vercel.app",
     "image": "daraz2.png"
   },
+
   {
     "title": "ProductVideoExample - Landing Page",
     "shortDescription": "A landing page to practice my core CSS skills.",

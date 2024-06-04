@@ -12,10 +12,7 @@ const otherProjectsContainer = document.querySelector(
 const resumeBtn = document
   .getElementById("resumeBtn")
   .addEventListener("click", (e) => {
-    // e.preventDefault();
-    console.log(window.location);
-    console.log(e.target.dataset.resume);
-    window.open(window.location.href + e.target.dataset.resume);
+    window.open(e.target.dataset.resume);
   });
 
 const technologiesContainer = document.querySelector(".technologies ul");
@@ -35,9 +32,9 @@ function insertTopProjects() {
       console.log(projects);
       projects.forEach((project) => {
         const projectContainer = document.createElement("div");
-        projectContainer.addEventListener("click", (e) => {
-          window.open(project.liveLink);
-        });
+        // projectContainer.addEventListener("click", (e) => {
+        //   window.open(project.liveLink);
+        // });
         projectContainer.classList.add("project-container");
 
         const projectImage = document.createElement("div");
@@ -206,9 +203,9 @@ function insertOtherProjects() {
         projectContainer.dataset.redirect = project.liveLink;
 
         projectContainer.onclick = (e) => {
-          e.stopPropagation();
-          console.log(e.target.dataset.redirect);
-          // window.location.href = e.target.dataset.redirect;
+          // e.stopPropagation();
+          // console.log(e.target.dataset.redirect);
+          // window.open(project.liveLink);
         };
 
         const projectTop = document.createElement("div");
@@ -263,7 +260,7 @@ function insertOtherProjects() {
                 ${
                   project.liveLink
                     ? `<a href= "${project.liveLink}" 
-                        target = ""  
+                        target = "_blank"  
                         class="hover-highlight-green text-highlight"
                       >
                       <svg

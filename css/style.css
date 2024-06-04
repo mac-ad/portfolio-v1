@@ -652,7 +652,7 @@ main .self-pic-wrapper img {
   content: "";
   position: absolute;
   background: var(--green);
-  opacity: 0.4;
+  opacity: 0.1;
   height: 100%;
   width: 100%;
   z-index: 999;
@@ -801,6 +801,14 @@ main .self-pic-wrapper img {
   border-radius: var(--border-radius-2);
 }
 
+.other-project-container p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .other-project-container > *:last-child {
   margin-top: auto;
 }
@@ -883,6 +891,17 @@ footer span {
 
 .inspiredLink a:hover {
   text-decoration: underline;
+}
+
+/* blogs */
+#blogs .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#blogs .container > * {
+  border: 1px solid red;
+  width: 100%;
 }
 
 @media only screen and (min-width: 700px) {
