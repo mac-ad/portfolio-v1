@@ -25,6 +25,7 @@ tl.fromTo(
     opacity: 1,
     y: 0,
     stagger: 0.2,
+    duration: 1.2,
   }
 )
   .fromTo(
@@ -40,7 +41,7 @@ tl.fromTo(
     }
   )
   .fromTo(
-    main,
+    document.querySelectorAll("main"),
     {
       opacity: 0,
       y: 10,
