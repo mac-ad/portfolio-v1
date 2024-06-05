@@ -413,8 +413,8 @@ async function insertInspiration() {
 //   };
 // }
 
-addSocialLinks();
-insertInspiration();
+// addSocialLinks();
+// insertInspiration();
 insertTopProjects();
 insertOtherProjects();
 insertTechnologies();
