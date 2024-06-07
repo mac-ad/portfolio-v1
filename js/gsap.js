@@ -16,18 +16,28 @@ const main = document.querySelector("main");
 const tl = gsap.timeline({ defaults: { ease: "power4.inOut" } });
 
 tl.fromTo(
-  document.querySelectorAll("header >*"),
+  document.querySelectorAll("body"),
   {
     opacity: 0,
-    y: 20,
   },
   {
     opacity: 1,
-    y: 0,
-    stagger: 0.2,
-    duration: 1.2,
+    duration: 1,
   }
 )
+  .fromTo(
+    document.querySelectorAll("header >*"),
+    {
+      opacity: 0,
+      y: 20,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      stagger: 0.2,
+      duration: 1.2,
+    }
+  )
   .fromTo(
     document.querySelectorAll(".social-links >*"),
     {

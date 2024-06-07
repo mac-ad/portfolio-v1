@@ -75,6 +75,8 @@ body {
   color: var(--text-normal);
   font-size: var(--fs-n);
   line-height: var(--line-height);
+
+  opacity: 0;
 }
 
 p {
