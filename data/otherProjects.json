@@ -9,6 +9,13 @@
     "image": "pharmacy.png"
   },
   {
+    "title": "Portfolio-v1",
+    "description": "The Source code of this portfolio website.",
+    "techs": ["HTML", "CSS", "JS"],
+    "github": "https://github.com/mac-ad/portfolio-v1",
+    "liveLink": "https://www.ashishkumarkhatri.com.np/"
+  },
+  {
     "title": "Landing Pages",
     "description": "List of landing pages I have built during my practice",
     "techs": ["HTML", "CSS", "JS"],
