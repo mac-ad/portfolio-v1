@@ -19,6 +19,14 @@
     "image": "chatluxe.png"
   },
   {
+    "title": "Small Things I built while learning web motions",
+    "description": "Modern websites have web motions in it. So started learning it to upskill myself. Still learning.",
+    "techs": ["TypeScript", "NextJS", "GSAP", "Framer Motion"],
+    "github": "https://github.com/mac-ad/Web-motions",
+    "liveLink": "https://motion.ashishkumarkhatri.com.np/",
+    "image": "webMotion.png"
+  },
+  {
     "title": "MovieFlix",
     "shortDescription": "Simple movie info website powered by TMDB API useful for discovering movies",
     "description": "MovieFlix is a feature-rich movie information website that leverages the power of The Movie Database (TMDB) API to provide users with a comprehensive and user-friendly platform for exploring and discovering movies.",
