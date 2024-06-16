@@ -3,7 +3,7 @@ const hoverCircle = document.querySelector(".hover-gradient");
 document.querySelector("body").addEventListener("mousemove", (e) => {
   gsap.to(hoverCircle, {
     background: `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(29, 78, 216, 0.116), transparent 80%)`,
-    duration: 1,
+    duration: 0.5,
   });
   //   const x = e.clientX;
   //   const y = e.clientY;
