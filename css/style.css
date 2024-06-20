@@ -530,6 +530,7 @@ main .title {
 .technologies li {
   font-size: var(--fs-s);
   counter-increment: technologiesCount 1;
+  white-space: nowrap;
 }
 
 .technologies li:before {
