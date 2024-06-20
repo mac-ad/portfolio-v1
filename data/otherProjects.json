@@ -14,12 +14,5 @@
     "techs": ["HTML", "CSS", "JS"],
     "github": "https://github.com/mac-ad/portfolio-v1",
     "liveLink": "https://www.ashishkumarkhatri.com.np/"
-  },
-  {
-    "title": "Landing Pages",
-    "description": "List of landing pages I have built during my practice",
-    "techs": ["HTML", "CSS", "JS"],
-    "github": "https://github.com/mac-ad/landingPages",
-    "liveLink": "/archive.html"
   }
 ]

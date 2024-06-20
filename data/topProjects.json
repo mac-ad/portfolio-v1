@@ -1,7 +1,17 @@
 [
   {
+    "title": "Web motions",
+    "description": "Modern websites have web motions in it. So started learning it to upskill myself. Still learning.",
+    "shortDescription": "Refined my skill by implementing all the industry standards.",
+    "techs": ["TypeScript", "NextJS", "GSAP", "Framer Motion"],
+    "github": "https://github.com/mac-ad/Web-motions",
+    "liveLink": "https://motion.ashishkumarkhatri.com.np/",
+    "image": "webMotion.png"
+  },
+  {
     "title": "Chatluxe : Real Time Chat App (under construction)",
     "description": "A real time chat app that has clean UI similar to that of Whatsapp.",
+    "shortDescription": "",
     "techs": [
       "TypeScript",
       "NextJS",
@@ -18,14 +28,7 @@
     "liveLink": "https://chatluxe.ashishkumarkhatri.com.np/",
     "image": "chatluxe.png"
   },
-  {
-    "title": "Small Things I built while learning web motions",
-    "description": "Modern websites have web motions in it. So started learning it to upskill myself. Still learning.",
-    "techs": ["TypeScript", "NextJS", "GSAP", "Framer Motion"],
-    "github": "https://github.com/mac-ad/Web-motions",
-    "liveLink": "https://motion.ashishkumarkhatri.com.np/",
-    "image": "webMotion.png"
-  },
+
   {
     "title": "MovieFlix",
     "shortDescription": "Simple movie info website powered by TMDB API useful for discovering movies",

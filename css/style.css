@@ -938,7 +938,7 @@ footer span {
   }
 
   #projects .project-container p.short {
-    display: none;
+    /* display: none; */
   }
 
   .technologies ul {
