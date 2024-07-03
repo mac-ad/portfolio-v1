@@ -137,7 +137,11 @@ function insertExperiences() {
         li.innerHTML = `
                 <span class="duration font-mono"> ${experience.duration} </span>
                 <span class="designation"> ${experience.company.name}</span>
-                <a href = "${experience.company.url}" target = "_blank" class="company"><h3 >${experience.designation}  <svg
+                <a href = "${
+                  experience.company.url
+                } " target = "_blank" class="company ${
+          experience.company.clickable ? "" : "disabled"
+        }"><h3 >${experience.designation}  <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
                 viewBox="0 0 24 24"

@@ -76,7 +76,7 @@ body {
   font-size: var(--fs-n);
   line-height: var(--line-height);
 
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 p {
@@ -259,7 +259,7 @@ h3 {
 
 .secondary {
   font-size: var(--fs-s);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 h1.logo {
@@ -735,6 +735,11 @@ main .self-pic-wrapper img {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  font-size: var(--fs-s);
+}
+
+.experiences-list li .description-list {
+  font-size: var(--fs-s);
 }
 
 .experiences-list li p {
@@ -757,11 +762,15 @@ main .self-pic-wrapper img {
 }
 
 .experiences-list .company h3 {
-  font-weight: 500;
+  font-weight: normal;
 }
 
 .experiences-list .company:hover {
   color: var(--green);
+}
+
+.experiences-list .company.disabled {
+  pointer-events: none;
 }
 
 .experiences-list .company svg {
@@ -775,8 +784,12 @@ main .self-pic-wrapper img {
 
 .experiences-list .designation,
 .experiences-list .duration {
-  font-weight: 600;
+  /* font-weight: 600; */
   opacity: 0.6;
+}
+
+.experiences-list .designation {
+  margin-top: -0.4em;
 }
 
 /* other projects */
@@ -990,7 +1003,7 @@ footer span {
   }
 
   #projects .project-container {
-    margin-left: -2em;
+    margin-left: -1.3em;
     padding: 1.3em 1.5em;
   }
 

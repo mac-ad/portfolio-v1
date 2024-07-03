@@ -1,10 +1,34 @@
 [
   {
+    "duration": "Jun 2024 — current",
+    "designation": "Frontend Developer Freelancer",
+    "company": {
+      "name": "Self Employed",
+      "url": "",
+      "clickable": false
+    },
+    "techs": [
+      "ReactJS",
+      "TailwindCSS",
+      "Javascript",
+      "Zustand",
+      "React hooks form",
+      "Redux Toolkit",
+      "shadcn ui"
+    ],
+    "description": "Worked with client as a frontend developer.",
+    "contributions": [
+      "Developed a static informatic website for global pharmacy event. That you can check out below in my projects section",
+      "Developed a Blogging platform targeted towards agriculture industry.With admin dashboard feature.(currently working)"
+    ]
+  },
+  {
     "duration": "Feb 2024 — May 2024",
     "designation": "Frontend Developer Intern",
     "company": {
       "name": "Everestwalk Groups",
-      "url": "https://everestwalk.com/"
+      "url": "https://everestwalk.com/",
+      "clickable": true
     },
     "techs": [
       "NextJS",
