@@ -1,6 +1,26 @@
-[
+[ 
   {
-    "duration": "Jun 2024 — current",
+    "duration": "July 2024 — current",
+    "designation": "Frontend Developer",
+    "company": {
+      "name": "Sand Console",
+      "url": "https://sandconsole.com/",
+      "clickable": true
+    },
+    "techs": [
+      "ReactJS",
+      "Javascript",
+      "CSS",
+      "Redux Toolkit",
+      "Mix Panel"
+    ],
+    "description": "",
+    "contributions": [
+      "Working on a news aggregator website that aggregates new feeds from multiple sources"
+    ]
+  },
+  {
+    "duration": "May 2024 — June 2024",
     "designation": "Frontend Developer Freelancer",
     "company": {
       "name": "Self Employed",

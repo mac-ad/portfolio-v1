@@ -10,55 +10,55 @@ document.querySelector("body").addEventListener("mousemove", (e) => {
   //   hoverCircle.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.116), transparent 80%)`;
 });
 
-const header = document.querySelector("#about");
-const main = document.querySelector("main");
+// const header = document.querySelector("#about");
+// const main = document.querySelector("main");
 
-const tl = gsap.timeline({ defaults: { ease: "power4.inOut" } });
+// const tl = gsap.timeline({ defaults: { ease: "power4.inOut" } });
 
-tl.fromTo(
-  document.querySelectorAll("body"),
-  {
-    opacity: 0,
-  },
-  {
-    opacity: 1,
-    duration: 0.5,
-  }
-)
-  .fromTo(
-    document.querySelectorAll("header >*"),
-    {
-      opacity: 0,
-      y: 20,
-    },
-    {
-      opacity: 1,
-      y: 0,
-      stagger: 0.2,
-      duration: 0.5,
-    }
-  )
-  .fromTo(
-    document.querySelectorAll(".social-links >*"),
-    {
-      opacity: 0,
-      y: 10,
-    },
-    {
-      opacity: 1,
-      y: 0,
-      stagger: 0.2,
-    }
-  )
-  .fromTo(
-    document.querySelectorAll("main"),
-    {
-      opacity: 0,
-      y: 10,
-    },
-    {
-      opacity: 1,
-      y: 0,
-      stagger: 0.2,
-    }
-  );
+// tl.fromTo(
+//   document.querySelectorAll("body"),
+//   {
+//     opacity: 0,
+//   },
+//   {
+//     opacity: 1,
+//     duration: 0.5,
+//   }
+// )
+//   .fromTo(
+//     document.querySelectorAll("header >*"),
+//     {
+//       opacity: 0,
+//       y: 20,
+//     },
+//     {
+//       opacity: 1,
+//       y: 0,
+//       stagger: 0.2,
+//       duration: 0.5,
+//     }
+//   )
+//   .fromTo(
+//     document.querySelectorAll(".social-links >*"),
+//     {
+//       opacity: 0,
+//       y: 10,
+//     },
+//     {
+//       opacity: 1,
+//       y: 0,
+//       stagger: 0.2,
+//     }
+//   )
+//   .fromTo(
+//     document.querySelectorAll("main"),
+//     {
+//       opacity: 0,
+//       y: 10,
+//     },
+//     {
+//       opacity: 1,
+//       y: 0,
+//       stagger: 0.2,
+//     }
+//   );
