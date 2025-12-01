@@ -1,7 +1,28 @@
 [
   {
+    "title": "MyHomeTechVerse",
+    "description": "A full-stack modern **E-commerce Platform** featuring a dedicated **Admin Dashboard**`for comprehensive product, order, and user management.Engineered a scalable platform using **Next.js 14** with server-side components for fast initial load times andimproved SEO Developed a protected **Admin Panel** to handle CRUD operations for products and manage order fulfillment. Integrated **Cloudinary** for scalable cloud storage and delivery of product images and media assets.  Configured **SMTP** email service (via Gmail) for sending transaction receipts, order confirmations, and customer notifications.",
+    "shortDescription": "A full-stack modern **E-commerce Platform** featuring a dedicated **Admin Dashboard** for comprehensive product, order, and user management. ",
+    "techs": [
+      "TypeScript",
+      "NextJS",
+      "GSAP",
+      "Framer Motion",
+      "MongoDB",
+      "Cloudinary",
+      "NextUI",
+      "TailwindCSS",
+      "Zustand",
+      "Node mailer",
+      "Gmail SMTP"
+    ],
+    "github": "https://github.com/mac-ad/E-commerce",
+    "liveLink": "https://myhometechverse.vercel.app/",
+    "image": "webMotion.png"
+  },
+  {
     "title": "Web motions",
-    "description": "Modern websites have web motions in it. So started learning it to upskill myself. Still learning.",
+    "description": "A dedicated showcase of advanced, modern web animations and sophisticated UI/UX effects integrated into a performant web application. Created dynamic, high-fidelity UI animations using industry-standard libraries like **Framer Motion** and **GSAP** (GreenSock). Focused on optimizing animation performance across different devices, ensuring smooth 60fps transitions and complex motion sequencing. Developed the application using the **NextJS** framework, leveraging its capabilities for routing and optimized rendering of UI elements.",
     "shortDescription": "Refined my skill by implementing all the industry standards.",
     "techs": [
       "TypeScript",
@@ -27,19 +48,6 @@
     "github": "https://github.com/mac-ad/movieflix",
     "liveLink": "https://movieflix-site.vercel.app",
     "image": "movieFlix.png"
-  },
-  {
-    "title": "Daraz2",
-    "shortDescription": "An ecommerce platform where user can view others products and also become seller themselves and list products.",
-    "description": "Daraz2 is an ecommerce platform where user can list their products with the permission of admin and leverage the power of internet to sell their products.",
-    "techs": [
-      "ReactJs",
-      "Context Api",
-      "Vanila CSS"
-    ],
-    "github": "https://github.com/mac-ad/alldokanfrontend",
-    "liveLink": "https://daraz2.vercel.app",
-    "image": "daraz2.png"
   },
   {
     "title": "ProductVideoExample - Landing Page",
