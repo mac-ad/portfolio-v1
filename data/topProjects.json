@@ -3,37 +3,27 @@
     "title": "Web motions",
     "description": "Modern websites have web motions in it. So started learning it to upskill myself. Still learning.",
     "shortDescription": "Refined my skill by implementing all the industry standards.",
-    "techs": ["TypeScript", "NextJS", "GSAP", "Framer Motion"],
+    "techs": [
+      "TypeScript",
+      "NextJS",
+      "GSAP",
+      "Framer Motion"
+    ],
     "github": "https://github.com/mac-ad/Web-motions",
     "liveLink": "https://web-motions.vercel.app/",
     "image": "webMotion.png"
   },
   {
-    "title": "Chatluxe : Real Time Chat App (under construction)",
-    "description": "A real time chat app that has clean UI similar to that of Whatsapp.",
-    "shortDescription": "",
-    "techs": [
-      "TypeScript",
-      "NextJS",
-      "MongoDB",
-      "NodeJS",
-      "Socket.io",
-      "Zustand",
-      "React Hooks Form",
-      "Fetch Api",
-      "Postman",
-      "JWT authentication"
-    ],
-    "github": "https://github.com/mac-ad/chatluxe",
-    "liveLink": "https://chatluxe.vercel.app/",
-    "image": "chatluxe.png"
-  },
-
-  {
     "title": "MovieFlix",
     "shortDescription": "Simple movie info website powered by TMDB API useful for discovering movies",
     "description": "MovieFlix is a feature-rich movie information website that leverages the power of The Movie Database (TMDB) API to provide users with a comprehensive and user-friendly platform for exploring and discovering movies.",
-    "techs": ["ReactJS", "Fetch API", "TMDB API", "Vanila CSS", "SwiperJS"],
+    "techs": [
+      "ReactJS",
+      "Fetch API",
+      "TMDB API",
+      "Vanila CSS",
+      "SwiperJS"
+    ],
     "github": "https://github.com/mac-ad/movieflix",
     "liveLink": "https://movieflix-site.vercel.app",
     "image": "movieFlix.png"
@@ -42,17 +32,24 @@
     "title": "Daraz2",
     "shortDescription": "An ecommerce platform where user can view others products and also become seller themselves and list products.",
     "description": "Daraz2 is an ecommerce platform where user can list their products with the permission of admin and leverage the power of internet to sell their products.",
-    "techs": ["ReactJs", "Context Api", "Vanila CSS"],
+    "techs": [
+      "ReactJs",
+      "Context Api",
+      "Vanila CSS"
+    ],
     "github": "https://github.com/mac-ad/alldokanfrontend",
     "liveLink": "https://daraz2.vercel.app",
     "image": "daraz2.png"
   },
-
   {
     "title": "ProductVideoExample - Landing Page",
     "shortDescription": "A landing page to practice my core CSS skills.",
     "description": "I made this website to practice my core CSS skills. This was a template that I found and tried to recreate it exactly how it looked.",
-    "techs": ["HTML", "CSS", "JS"],
+    "techs": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
     "github": "https://github.com/mac-ad/landingPages/tree/main/productvideoexamples.com",
     "liveLink": "https://productvideoexamples-landingpage.onrender.com/",
     "image": "productvideoexamples-landingpage.onrender.com_.png"
