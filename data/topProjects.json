@@ -1,7 +1,7 @@
 [
   {
     "title": "MyHomeTechVerse",
-    "description": "A full-stack modern **E-commerce Platform** featuring a dedicated **Admin Dashboard**`for comprehensive product, order, and user management.Engineered a scalable platform using **Next.js 14** with server-side components for fast initial load times andimproved SEO Developed a protected **Admin Panel** to handle CRUD operations for products and manage order fulfillment. Integrated **Cloudinary** for scalable cloud storage and delivery of product images and media assets.  Configured **SMTP** email service (via Gmail) for sending transaction receipts, order confirmations, and customer notifications.",
+    "description": "A full-stack modern **E-commerce Platform** featuring a dedicated **Admin Dashboard** for comprehensive product, order, and user management.",
     "shortDescription": "A full-stack modern **E-commerce Platform** featuring a dedicated **Admin Dashboard** for comprehensive product, order, and user management. ",
     "techs": [
       "TypeScript",
@@ -18,12 +18,12 @@
     ],
     "github": "https://github.com/mac-ad/E-commerce",
     "liveLink": "https://myhometechverse.vercel.app/",
-    "image": "webMotion.png"
+    "image": "myhometechverse.png"
   },
   {
     "title": "Web motions",
-    "description": "A dedicated showcase of advanced, modern web animations and sophisticated UI/UX effects integrated into a performant web application. Created dynamic, high-fidelity UI animations using industry-standard libraries like **Framer Motion** and **GSAP** (GreenSock). Focused on optimizing animation performance across different devices, ensuring smooth 60fps transitions and complex motion sequencing. Developed the application using the **NextJS** framework, leveraging its capabilities for routing and optimized rendering of UI elements.",
-    "shortDescription": "Refined my skill by implementing all the industry standards.",
+    "description": "developed Web Motions, a showcase of advanced, performant web animations and sophisticated UI/UX effects. Using Framer Motion and GSAP, I engineered complex motion sequencing optimized for smooth 60fps transitions. The application is built on Next.js to ensure superior routing and rendering performance, demonstrating strong technical skill in integrating complex visuals with modern architecture.",
+    "shortDescription": "developed Web Motions, a showcase of advanced, performant web animations and sophisticated UI/UX effects. Using Framer Motion and GSAP, I engineered complex motion sequencing optimized for smooth 60fps transitions. The application is built on Next.js to ensure superior routing and rendering performance, demonstrating strong technical skill in integrating complex visuals with modern architecture.",
     "techs": [
       "TypeScript",
       "NextJS",

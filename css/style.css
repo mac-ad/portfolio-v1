@@ -679,7 +679,7 @@ main .self-pic-wrapper img {
 }
 
 #projects .project-container p.long {
-  /* display: none; */
+  display: none;
 }
 
 #projects .project-container .project-content {
@@ -951,7 +951,7 @@ footer span {
   }
 
   #projects .project-container p.short {
-    /* display: none; */
+    display: none;
   }
 
   .technologies ul {
