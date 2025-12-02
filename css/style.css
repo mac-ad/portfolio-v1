@@ -22,9 +22,12 @@ body {
 
   --green: rgb(94 234 212);
 
+
   --green-dark: rgb(172, 218, 211);
 
+
   --green-bg: rgba(17, 106, 92, 0.507);
+
 
   --navy: #0a192f;
   --light-navy: #233554;
@@ -52,6 +55,7 @@ body {
   --black: #0a0118;
 
   --primary: var(--green);
+
   /* generiic */
 
   /* --primary: rgba(255, 255, 255, 0.83); */
@@ -88,7 +92,7 @@ p {
   color: red;
 }
 
-body > div {
+body>div {
   /* background: radial-gradient(600px at 500px 500px, #132f593a, transparent 80%); */
 }
 
@@ -225,11 +229,9 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
-  background: radial-gradient(
-    600px at 1036px 164px,
-    rgba(29, 79, 216, 0.116),
-    transparent 80%
-  );
+  background: radial-gradient(600px at 1036px 164px,
+      rgba(29, 79, 216, 0.116),
+      transparent 80%);
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -251,7 +253,7 @@ h3 {
   margin-inline: auto;
 }
 
-.wrapper > * {
+.wrapper>* {
   /* border: 1px solid red; */
   /* margin: 10em 0 0; */
   /* margin: 5em 0 0; */
@@ -293,7 +295,7 @@ nav {
   justify-content: space-between;
 }
 
-.project-content > a {
+.project-content>a {
   pointer-events: none;
 }
 
@@ -335,7 +337,7 @@ header {
   padding-top: 5em;
 }
 
-header > * {
+header>* {
   /* border: 1px solid red; */
 }
 
@@ -410,8 +412,7 @@ nav svg {
   margin-bottom: -2em;
 }
 
-nav {
-}
+nav {}
 
 .inspiredLink {
   margin-top: -20px;
@@ -467,9 +468,10 @@ a.special-btn-2 button {
 .special-hover-2:hover {
   background: var(--primary);
 }
+
 /* main */
 
-main > * {
+main>* {
   /* border: 1px solid red; */
 }
 
@@ -484,7 +486,7 @@ main section {
   /* border: 1px solid red; */
 }
 
-main > * {
+main>* {
   /* border:1px solid red; */
 }
 
@@ -543,7 +545,7 @@ main .title {
   transform: translateY(-50%);
 }
 
-main .self-pic-wrapper > * {
+main .self-pic-wrapper>* {
   transition: all 200ms ease;
 }
 
@@ -580,13 +582,13 @@ main .self-pic-wrapper img {
 }
 
 /* projects */
-#projects > .content {
+#projects>.content {
   display: flex;
   flex-direction: column;
   gap: 3em;
 }
 
-#projects > .content > *:not(:first-child) {
+#projects>.content>*:not(:first-child) {
   /* border-top: 1px solid rgba(255, 255, 255, 0.147); */
 }
 
@@ -599,11 +601,11 @@ main .self-pic-wrapper img {
   max-width: 700px;
 }
 
-#projects .project-container > * {
+#projects .project-container>* {
   /* border: 1px solid red; */
 }
 
-#projects .project-content > * {
+#projects .project-content>* {
   /* border: 1px solid red; */
 }
 
@@ -654,7 +656,7 @@ main .self-pic-wrapper img {
   content: "";
   position: absolute;
   background: var(--green);
-  opacity: 0.1;
+  opacity: 0.3;
   height: 100%;
   width: 100%;
   z-index: 999;
@@ -670,7 +672,7 @@ main .self-pic-wrapper img {
   border-radius: 8px;
 }
 
-#projects .project-container:hover .project-content > a {
+#projects .project-container:hover .project-content>a {
   color: var(--green);
 }
 
@@ -708,7 +710,7 @@ main .self-pic-wrapper img {
   gap: 3em;
 }
 
-.experiences-list > li {
+.experiences-list>li {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -728,8 +730,7 @@ main .self-pic-wrapper img {
   line-height: 1.5;
 }
 
-.experiences-list > li:hover {
-}
+.experiences-list>li:hover {}
 
 .experiences-list li .content {
   display: flex;
@@ -824,7 +825,7 @@ main .self-pic-wrapper img {
   text-overflow: ellipsis;
 }
 
-.other-project-container > *:last-child {
+.other-project-container>*:last-child {
   margin-top: auto;
 }
 
@@ -837,7 +838,7 @@ main .self-pic-wrapper img {
   color: var(--green);
 }
 
-.other-project-container > *:not(:first-child) {
+.other-project-container>*:not(:first-child) {
   pointer-events: none;
 }
 
@@ -914,7 +915,7 @@ footer span {
   grid-template-columns: 1fr;
 }
 
-#blogs .container > * {
+#blogs .container>* {
   border: 1px solid red;
   width: 100%;
 }
@@ -942,7 +943,7 @@ footer span {
     /* background: var(--project-hover-bg); */
   }
 
-  #projects .project-container > * {
+  #projects .project-container>* {
     /* pointer-events: none; */
   }
 
@@ -958,7 +959,7 @@ footer span {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .experiences-list > li {
+  .experiences-list>li {
     display: grid;
     grid-template-columns: 0.5fr 3fr;
     grid-column-gap: 2em;
@@ -967,8 +968,7 @@ footer span {
     max-width: 700px;
   }
 
-  .experiences-list > li > * {
-  }
+  .experiences-list>li>* {}
 
   .experiences-list li .duration {
     grid-row: 1/-1;
@@ -992,11 +992,9 @@ footer span {
     justify-content: flex-start !important;
   }
 
-  .experiences-list .techs-used li {
-  }
+  .experiences-list .techs-used li {}
 
-  .experiences-list li:hover {
-  }
+  .experiences-list li:hover {}
 
   #other-projects .content {
     grid-template-columns: repeat(2, 1fr);
@@ -1038,7 +1036,7 @@ footer span {
     padding-top: 0;
   }
 
-  #projects > .content {
+  #projects>.content {
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -1066,7 +1064,7 @@ footer span {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  main > * {
+  main>* {
     /* border: 1px solid red; */
     padding-top: calc(var(--nav-height) + 2em);
   }
@@ -1115,7 +1113,7 @@ footer span {
     top: var(--nav-height);
   }
 
-  .wrapper > * {
+  .wrapper>* {
     width: 50%;
   }
 
@@ -1140,20 +1138,20 @@ footer span {
     grid-template-columns: 2fr 1fr;
   }
 
-  #projects > .content {
+  #projects>.content {
     /* gap: 2em; */
   }
 
-  section#about-me > * {
+  section#about-me>* {
     /* border: 1px solid red; */
     align-self: self-start;
   }
 
-  section#about-me > *:first-child {
+  section#about-me>*:first-child {
     grid-column: 1/-1;
   }
 
-  section#about-me > * {
+  section#about-me>* {
     flex: 1 0 50%;
   }
 
@@ -1176,7 +1174,7 @@ footer span {
     margin-bottom: 0;
   }
 
-  footer > a {
+  footer>a {
     display: none !important;
     border: 1px solid red;
   }
