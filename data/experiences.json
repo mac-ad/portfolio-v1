@@ -1,4 +1,4 @@
-[ 
+[
   {
     "duration": "July 2024 — current",
     "designation": "Frontend Developer",
@@ -12,11 +12,16 @@
       "Javascript",
       "CSS",
       "Redux Toolkit",
-      "Mix Panel"
+      "Mix Panel",
+      "Socket",
+      "Elastic Search",
+      "CronJobs",
+      "MongoDB",
+      "NodeJS"
     ],
     "description": "",
     "contributions": [
-      "Working on a news aggregator website that aggregates new feeds from multiple sources"
+      "Developed and maintained a high-performance news aggregator platform, optimizing resource feeding and content delivery pipelines for multiple widgets. Engineered highly optimized code across the full stack using NodeJS (backend) and ReactJS/NextJS (frontend) for maximum efficiency and speed. Collaborated closely with the design team to ensure accurate and pixel-perfect implementation of UI/UX designs as per requirements. Built data-intensive optimized components that managed multiple parallel Socket connections and real-time live updates of news content."
     ]
   },
   {

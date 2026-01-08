@@ -37,8 +37,8 @@ body {
   --project-hover-bg: rgba(255, 255, 255, 0.064);
 
   --border-radius-small: 3px;
-  --border-radius: 1px;
-  --border-radius-2: 1px;
+  --border-radius: 7px;
+  --border-radius-2: 7px;
 
   --fs-xxl: 3rem;
   --fs-xl: 1.3rem;
@@ -395,6 +395,7 @@ a.special-btn-2 {
   width: fit-content;
   cursor: pointer;
   display: block;
+  border-radius: var(--border-radius);
 }
 
 header .buttons-container {
@@ -432,6 +433,7 @@ a.special-btn-2 button {
   border: 1px solid var(--primary);
   padding: 1em 2.5em;
   pointer-events: none;
+  border-radius: var(--border-radius) !important;
 }
 
 a.small.special-btn button {

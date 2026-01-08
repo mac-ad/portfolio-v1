@@ -1,5 +1,21 @@
 [
   {
+    "title": "WorldRadio: A Radio Station Website",
+    "description": "WorldRadio is a radio station website that allows users to listen to radio stations from around the world.",
+    "shortDescription": "WorldRadio is a radio station website that allows users to listen to radio stations from around the world.",
+    "techs": [
+      "ReactJS",
+      "MapLibre",
+      "TailwindCSS",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "github": "https://github.com/mac-ad/world-radio",
+    "liveLink": "https://worldradio.macad.dev/",
+    "image": "worldradio.png"
+  },
+  {
     "title": "MyHomeTechVerse",
     "description": "A full-stack modern **E-commerce Platform** featuring a dedicated **Admin Dashboard** for comprehensive product, order, and user management.",
     "shortDescription": "A full-stack modern **E-commerce Platform** featuring a dedicated **Admin Dashboard** for comprehensive product, order, and user management. ",
